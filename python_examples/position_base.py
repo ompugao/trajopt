@@ -11,9 +11,6 @@ import json
 from trajoptpy.check_traj import traj_is_safe
 
 
-if rave.__version__ < "0.9":
-    raise Exception("this example only works with openrave >= 0.9 due to recent jacobian bugfix")
-
 
 def position_base_request(robot, link_name, xyz_targ, quat_targ):
         
